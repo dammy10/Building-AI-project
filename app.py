@@ -1,4 +1,6 @@
 def priority_score(difficulty, days_left):
+    if days_left == 0:
+        return float('inf')
     return difficulty * 2 + (1 / days_left)
 
 
